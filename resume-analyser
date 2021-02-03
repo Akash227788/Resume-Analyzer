@@ -15,7 +15,7 @@ nlp = en_core_web_sm.load()
 from spacy.matcher import PhraseMatcher
 
 #Function to read resumes from the folder one by one
-mypath='D:/NLP_Resume/Candidate Resume' #enter your path here where you saved the resumes
+mypath='D:/NLP_Resume/Candidate Resume' #enter your path here where the resumes are there
 onlyfiles = [os.path.join(mypath, f) for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
 
 def pdfextract(file):
